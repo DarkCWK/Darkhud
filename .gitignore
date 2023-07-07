@@ -1,0 +1,10 @@
+# gradle
+.gradle/
+build/
+
+# vscode
+.vscode/
+bin/
+
+# fabric
+run/

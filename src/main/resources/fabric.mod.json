@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "darkhud",
+	"version": "${version}",
+	"name": "Darkhud",
+	"authors": [
+        "DarkCWK"
+	],
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.github.darkcwk.darkhud.DarkhudClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "1.20.x",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
