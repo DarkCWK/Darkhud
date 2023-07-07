@@ -1,17 +1,25 @@
 # Darkhud
 A Minecraft custom hud, using [Freemarker template engine](https://freemarker.apache.org/)...
+
 My code is terrible, I apologize... English also.
 
 There are four positions that can be edited
-    `path-to-version folder/config/darkhud/template/lt.ftl` => top left corner
-    `path-to-version folder/config/darkhud/template/rt.ftl` => upper right corner
-    `path-to-version folder/config/darkhud/template/lb.ftl` => left lower corner
-    `path-to-version folder/config/darkhud/template/rb.ftl` => lower right corner
+
+`path-to-version folder/config/darkhud/template/lt.ftl` => top left corner
+
+`path-to-version folder/config/darkhud/template/rt.ftl` => upper right corner
+
+`path-to-version folder/config/darkhud/template/lb.ftl` => left lower corner
+
+`path-to-version folder/config/darkhud/template/rb.ftl` => lower right corner
 
 Command:
-    `/darkhud query <lt|rt|lb|rb>`: Query display status
-    `/darkhud toggle <lt|rt|lb|rb>`: Switch display
-    `/darkhud edit <lt|rt|lb|rb>`: Edit template file
+
+`/darkhud query <lt|rt|lb|rb>`: Query display status
+
+`/darkhud toggle <lt|rt|lb|rb>`: Switch display
+
+`/darkhud edit <lt|rt|lb|rb>`: Edit template file
 
 Inject the following data into the template during use
 
