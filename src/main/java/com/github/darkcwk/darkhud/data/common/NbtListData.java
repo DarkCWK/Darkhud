@@ -1,5 +1,6 @@
 package com.github.darkcwk.darkhud.data.common;
 
+import com.github.darkcwk.darkhud.data.util.NbtTypeUtil;
 import com.github.darkcwk.darkhud.data.util.ObjectWrapperUtil;
 
 import freemarker.template.TemplateModel;
@@ -12,7 +13,7 @@ public class NbtListData implements TemplateSequenceModel {
 
     @Override
     public TemplateModel get(int index) throws TemplateModelException {
-        return ObjectWrapperUtil.wrap(nbtList.get(index));
+        return ObjectWrapperUtil.wrap(NbtTypeUtil.toObject(nbtList.get(index)));
     }
 
     @Override
