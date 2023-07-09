@@ -117,7 +117,11 @@ public class DarkhudData implements Data {
             this.tps = (int) (mspt <= 50 ? 20 : 1000 / mspt);
         }
 
-        this.latency = client.getNetworkHandler().getPlayerListEntry(client.player.getUuid()).getLatency();
+        if(client.player.getUuid() != null){
+            this.latency = client.getNetworkHandler().getPlayerListEntry(client.player.getUuid()).getLatency();
+        }else{
+            this.latency = -1;
+        }
 
         this.biomeId = client.world.getBiome(client.cameraEntity.getBlockPos()).getKey().get().getValue().toString();
 
